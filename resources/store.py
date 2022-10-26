@@ -8,7 +8,7 @@ from db import db
 from models import StoreModel
 from schemas import StoreSchema
 
-blp = Blueprint("stores", __name__, description="Operations on stores")
+blp = Blueprint("Stores", __name__, description="Operations on stores")
 
 @blp.route("/store/<int:store_id>")
 class Store(MethodView):
